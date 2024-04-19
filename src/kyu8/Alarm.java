@@ -22,6 +22,17 @@ Categories : Fundamentals, Booleans
  */
 public class Alarm {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolution(true,true));
+        System.out.println(YevgeniySolution(false, true));
+        System.out.println(YevgeniySolution(false, false));
+        System.out.println(YevgeniySolution(true, false));
+    }
 
+    static boolean YevgeniySolution(boolean isEmployed, boolean onVacation) {
+
+        return isEmployed && !onVacation;
+
+    }
 }

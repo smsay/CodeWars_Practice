@@ -16,6 +16,20 @@ Categories : Fundamentals, Booleans, Strings, Numbers, Arrays
  */
 public class CheckIfArrayContains {
 
+    public static void main(String[] args) {
 
+        var name = new String[]{"Tatev", "Umit", "Gozde"};
+        var nums = new Integer[]{1, 5, 10, 23, 41, 56};
+        System.out.println(YevgeniySolutionCheckIfArrayContains(name, "Umit"));
+        System.out.println(YevgeniySolutionCheckIfArrayContains(nums,11));
 
+    }
+
+    static <T, E> boolean YevgeniySolutionCheckIfArrayContains(T[] arr, E elem) {
+        for (T t : arr) {
+            if (t == elem)
+                return true;
+        }
+        return false;
+    }
 }

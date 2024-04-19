@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 
 DNA to RNA Conversion
@@ -24,5 +23,16 @@ Categories : Fundamentals, Strings
  */
 public class Bio {
 
+    public static void main(String[] args) {
 
+        String s = "GCAT";
+        System.out.println(YevgeniySolutionBio(s));
+
+    }
+
+    static String YevgeniySolutionBio(String s) {
+
+        if (s.contains("T")) return s.replace("T", "U");
+        else return s;
+    }
 }

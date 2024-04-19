@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Sum Arrays
 
@@ -35,6 +34,23 @@ Categories : Fundamentals, Loops, Control Flow, Basic Language Features, Arrays
  */
 public class SumArray {
 
+    public static void main(String[] args) {
 
+        var arr1 = new double[]{1, 5.2, 4, 0, -1};
+        var arr2 = new double[]{};
+        var arr3 = new double[]{-2.398};
+
+        System.out.println(YevgeniySolutionSumArray(0, 0, arr1));
+        System.out.println(YevgeniySolutionSumArray(0, 0, arr2));
+        System.out.println(YevgeniySolutionSumArray(0, 0, arr3));
+    }
+
+    static double YevgeniySolutionSumArray(int i, double sum, double[] array) {
+
+        if (array.length == 0) return sum;
+        if (i == array.length) return sum;
+
+        return YevgeniySolutionSumArray(i + 1, sum + array[i], array);
+    }
 
 }

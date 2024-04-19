@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 The Story:
 
@@ -28,4 +27,20 @@ Categories : Fundamentals, Numbers
  */
 class Bob {
 
+    public static void main(String[] args) {
+
+        YevgeniySolutionBob(10,5,5);
+        YevgeniySolutionBob(100,60,50);
+    }
+
+    static void YevgeniySolutionBob(int cap, int on, int wait) {
+
+        var result = (on + wait) - cap;
+
+        if (result == 0)
+            System.out.println(result + " # He can fit all " + wait + " passengers");
+        else
+            System.out.println(result + " # He can't fit " + result + " of the " + wait + " passengers");
+
+    }
 }

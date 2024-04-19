@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Area or Perimeter
 
@@ -20,4 +19,18 @@ Categories : Fundamentals
  */
 public class AreaOrPerimeter {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionAreaOrPerimeter(6, 10));
+        System.out.println(YevgeniySolutionAreaOrPerimeter(3, 3));
+
+    }
+
+    static int YevgeniySolutionAreaOrPerimeter(int a, int b) {
+
+        if (a == b)
+            return a * b;
+        else
+            return (a + b) * 2;
+    }
 }

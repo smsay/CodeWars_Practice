@@ -20,4 +20,19 @@ Categories : Fundamentals, Strings, Functions, Control Flow, Basic Language Feat
  */
 public class Banjo {
 
+    public static void main(String[] args) {
+
+        String name = "Roman";
+        String name2 = "Artur";
+
+        YevgeniySolutionBanjo(name);
+        YevgeniySolutionBanjo(name2);
+    }
+    static void YevgeniySolutionBanjo(String name) {
+
+        if (name.startsWith("R") || name.startsWith("r"))
+            System.out.println(name + " is playing banjo");
+        else
+            System.out.println(name + " does not play banjo");
+    }
 }

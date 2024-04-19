@@ -1,11 +1,10 @@
 package kyu8;
 
 
-
 /*
 Parse nice int from char problem
 
-Ask a small girl - "How old are you?". She always says strange things... Lets help her!
+Ask a small girl - "How old are you?". She always says strange things... Let's help her!
 
 For correct answer program should return int from 0 to 9.
 
@@ -16,4 +15,14 @@ Categories : Fundamentals, Integers, Numbers, Chars
  */
 public class CharProblem {
 
+    public static void main(String[] args) {
+
+        String answer = "1 year old";
+        System.out.println(YevgeniySolutionCharProblem(answer));
+
+    }
+
+    static int YevgeniySolutionCharProblem(String s) {
+        return Integer.parseInt(s.substring(0, 1));
+    }
 }
