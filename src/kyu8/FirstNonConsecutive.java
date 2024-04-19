@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Find the first non-consecutive number
 
@@ -19,5 +18,17 @@ Categories : Arrays, Fundamentals
  */
 class FirstNonConsecutive {
 
+    public static void main(String[] args) {
 
+        var arr = new int[]{1, 2, 3, 4, 6, 7, 8};
+        System.out.println(YevgeniySolutionFirstNonConsecutive(arr));
+    }
+
+    static Integer YevgeniySolutionFirstNonConsecutive(final int[] arr) {
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] - arr[i - 1] != 1) return arr[i];
+        }
+        return null;
+    }
 }
