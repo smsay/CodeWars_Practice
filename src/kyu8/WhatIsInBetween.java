@@ -1,6 +1,7 @@
 package kyu8;
 
 
+import java.util.Arrays;
 
 /*
 What is between?
@@ -18,5 +19,20 @@ Categories : Fundamentals, Algorithms
  */
 public class WhatIsInBetween {
 
+    public static void main(String[] args) {
 
+        var a = 2;
+        var b = 7;
+
+        System.out.println(Arrays.toString(YevgeniySolutionIsBetween(a, b)));
+    }
+
+    static int[] YevgeniySolutionIsBetween(int a, int b) {
+        var result = new int[b];
+        var i = 0;
+        while (a <= b) {
+            result[i++] = a++;
+        }
+        return Arrays.copyOf(result, i);
+    }
 }
