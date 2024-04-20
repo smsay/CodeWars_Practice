@@ -1,6 +1,10 @@
 package kyu8;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
 
 /*
 Find Maximum and Minimum Values of a List
@@ -22,5 +26,20 @@ Categories: Fundamentals, Basic Language Features
  */
 public class MinAndMaxOfListOrArray {
 
+    public static void main(String[] args) {
+
+        var arr = new int[]{4, 6, 2, 1, 9, 63, -134, 566};
+        var arr2 = new int[]{5};
+        var arr3 = new int[]{42, 54, 65, 87, 0};
+        YevgeniySolutionMaxMin(arr);
+        YevgeniySolutionMaxMin(arr2);
+        YevgeniySolutionMaxMin(arr3);
+    }
+
+    static void YevgeniySolutionMaxMin(int[] array) {
+        System.out.print("max = " + Arrays.stream(array).max().getAsInt() + " ");
+        System.out.println("min = " + Arrays.stream(array).min().getAsInt());
+
+    }
 
 }

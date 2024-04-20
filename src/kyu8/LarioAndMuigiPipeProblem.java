@@ -1,6 +1,8 @@
 package kyu8;
 
 
+import java.util.ArrayList;
+import java.util.List;
 
 /*
 Lario and Muigi Pipe Problem
@@ -23,4 +25,23 @@ Output: 1,2,3,4,5,6,7,8
  */
 public class LarioAndMuigiPipeProblem {
 
+    public static void main(String[] args) {
+
+        var arr = new int[]{1, 3, 5, 6, 7, 8};
+        System.out.println(YevgeniySolutionPipeProblem(arr));
+    }
+
+    static List<Integer> YevgeniySolutionPipeProblem(int[] array) {
+        var list = new ArrayList<Integer>();
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] - array[i - 1] != 1) {
+                list.add(array[i - 1]);
+                list.add(array[i - 1] + 1);
+            } else {
+                list.add(array[i - 1]);
+            }
+        }
+        list.add(array[array.length - 1]);
+        return list;
+    }
 }

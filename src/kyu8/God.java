@@ -16,22 +16,44 @@ Categories : Fundamentals
  */
 
 
+import java.util.Arrays;
 
 public class God {
 
+    static Human[] create() {
+        return new Human[]{new Man("Adam"), new Woman("Eve")};
+    }
 
+    public static void main(String[] args) {
 
+        System.out.println(Arrays.toString(God.create()));
+    }
 }
-
-//code
 interface Human {
 
 }
 
 class Man implements Human {
+    private final String name;
 
+    public Man(String name) {
+        this.name = name;
+    }
+
+    public String toString() {
+        return name;
+    }
 }
 
 class Woman implements Human {
+    private final String name;
 
+    public Woman(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
