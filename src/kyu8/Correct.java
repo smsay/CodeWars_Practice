@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Correct the mistakes of the character recognition software
 
@@ -21,4 +20,14 @@ Categories : Fundamentals
  */
 public class Correct {
 
+    public static void main(String[] args) {
+
+    }
+
+    static String YevgeniySolutionCorrect(String text) {
+
+        return text.replace("5", "S")
+                   .replace("0", "O")
+                   .replace("1", "I");
+    }
 }

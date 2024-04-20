@@ -1,6 +1,7 @@
 package kyu8;
 
 
+import java.util.Arrays;
 
 /*
 Cat years, Dog years
@@ -30,6 +31,30 @@ Categories : Fundamentals
  */
 public class Dinglemouse {
 
+    public static void main(String[] args) {
 
+        System.out.println(Arrays.toString(YevgeniySolutionHumanCatDogYears(1)));
+        System.out.println(Arrays.toString(YevgeniySolutionHumanCatDogYears(2)));
+        System.out.println(Arrays.toString(YevgeniySolutionHumanCatDogYears(10)));
+    }
 
+    static int[] YevgeniySolutionHumanCatDogYears(final int humanYears) {
+
+        var catYears = 0;
+        var dogYears = 0;
+
+        if (humanYears == 1) {
+            catYears = 15;
+            dogYears = 15;
+        }
+        if (humanYears == 2) {
+            catYears = 24;
+            dogYears = 24;
+        }
+        if (humanYears > 2) {
+            catYears = 24 + ((humanYears - 2) * 4);
+            dogYears += 24 + ((humanYears - 2) * 5);
+        }
+        return new int[]{humanYears, catYears, dogYears};
+    }
 }

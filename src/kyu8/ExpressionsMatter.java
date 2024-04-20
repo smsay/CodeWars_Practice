@@ -46,4 +46,24 @@ Categories : Fundamentals, Algorithms, Numbers, Basic Language Features
  */
 public class ExpressionsMatter {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionExpressionsMatter(1, 2, 3));
+        System.out.println(YevgeniySolutionExpressionsMatter(1, 1, 1));
+        System.out.println(YevgeniySolutionExpressionsMatter(2, 1, 2));
+        System.out.println(YevgeniySolutionExpressionsMatter(2, 1, 1));
+    }
+
+    static int YevgeniySolutionExpressionsMatter(int a, int b, int c) {
+
+        var result = (a + b) * c;
+        var result2 = a * (b + c);
+        var result3 = a * c * b;
+        var result4 = a + b + c;
+
+        if (result >= result2 && result >= result3 && result >= result4) return result;
+        if (result2 >= result3 && result2 >= result4) return result2;
+        if (result3 >= result2 && result3 >= result4) return result3;
+        return result4;
+    }
 }

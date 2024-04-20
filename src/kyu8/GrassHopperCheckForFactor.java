@@ -23,5 +23,20 @@ Categories : Mathematics, Fundamentals
  */
 public class GrassHopperCheckForFactor {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionCheckForFactor(10, 2));
+        System.out.println(YevgeniySolutionCheckForFactor(63, 7));
+        System.out.println(YevgeniySolutionCheckForFactor(2450, 5));
+
+        System.out.println(YevgeniySolutionCheckForFactor(9,2));
+        System.out.println(YevgeniySolutionCheckForFactor(653, 7));
+        System.out.println(YevgeniySolutionCheckForFactor(2453, 5));
+
+    }
+
+    static boolean YevgeniySolutionCheckForFactor(int base, int factor) {
+        if (base % factor == 0) return true;
+        else return false;
+    }
 }
