@@ -1,6 +1,8 @@
 package kyu8;
 
 
+import java.util.Arrays;
+
 /*
 Sum Arrays
 
@@ -43,6 +45,9 @@ public class SumArray {
         System.out.println(YevgeniySolutionSumArray(0, 0, arr1));
         System.out.println(YevgeniySolutionSumArray(0, 0, arr2));
         System.out.println(YevgeniySolutionSumArray(0, 0, arr3));
+        System.out.println(YevgeniySolutionSumArray2(arr1));
+        System.out.println(YevgeniySolutionSumArray2(arr2));
+        System.out.println(YevgeniySolutionSumArray2(arr3));
     }
 
     static double YevgeniySolutionSumArray(int i, double sum, double[] array) {
@@ -51,6 +56,13 @@ public class SumArray {
         if (i == array.length) return sum;
 
         return YevgeniySolutionSumArray(i + 1, sum + array[i], array);
+    }
+
+    static double YevgeniySolutionSumArray2(double[] array) {
+        if (array.length == 0) return 0;
+        if (array.length == 1) return array[0];
+
+        return array[0] + YevgeniySolutionSumArray2(Arrays.copyOfRange(array, 1, array.length));
     }
 
 }
