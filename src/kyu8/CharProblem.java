@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Parse nice int from char problem
 
@@ -16,4 +15,11 @@ Categories : Fundamentals, Integers, Numbers, Chars
  */
 public class CharProblem {
 
+    public static char age(String str) {
+        return str.charAt(0);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(age("1 year old"));
+    }
 }

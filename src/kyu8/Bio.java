@@ -24,5 +24,26 @@ Categories : Fundamentals, Strings
  */
 public class Bio {
 
+    public static StringBuilder dnaToRna(String dna){
+
+        StringBuilder rna= new StringBuilder();
+        for (char each : dna.toCharArray()) {
+            if(each=='T'){
+                each='U';
+            }
+           rna.append(each);
+        }
+        return rna;
+    }
+    public static void main(String[] args) {
+        String dna = "GCATGCATTTAACGA";
+
+        System.out.println(dnaToRna(dna));
+    }
+
+
+
+
+
 
 }

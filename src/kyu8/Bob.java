@@ -28,4 +28,18 @@ Categories : Fundamentals, Numbers
  */
 class Bob {
 
+    public static int bus(int cap,int on,int wait){
+
+        if (on+wait<=cap){
+           return 0;
+        }else {
+          return on+wait-cap;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(bus(10,5,5));
+        System.out.println(bus(100,60,50));
+    }
+
 }
