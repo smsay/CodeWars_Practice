@@ -19,5 +19,19 @@ Categories : Fundamentals, Strings, Arrays
  */
 public class AbbreviateTwoWords {
 
+public static String initials(String str){
+
+  return (str.charAt (0)+"."+str.charAt (str.indexOf(" ")+1)).toUpperCase();
+}
+
+    public static void main(String[] args) {
+        String str = "Sam Harris";
+        String str1= "patrick feeney";
+
+        System.out.println(initials(str));
+        System.out.println(initials(str1));
+
+    }
+
 
 }

@@ -14,4 +14,13 @@ Categories : Fundamentals
  */
 public class Ascii {
 
+    public static char letter(int n){
+
+       return (char)n;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(letter(65));
+    }
+
 }

@@ -20,4 +20,24 @@ Categories : Fundamentals, Strings, Functions, Control Flow, Basic Language Feat
  */
 public class Banjo {
 
+public  static String playingBanjo(String name){
+
+    if(name.charAt(0)=='R'||name.charAt(0)=='r'){
+        return (name+" plays banjo");
+    }else{
+        return (name+ " does not play banjo");
+    }
+
+}
+
+    public static void main(String[] args) {
+
+    String name="Gozde";
+    String name2="Raki";
+    String name3="remzi";
+        System.out.println(playingBanjo(name));
+        System.out.println(playingBanjo(name2));
+        System.out.println(playingBanjo(name3));
+    }
+
 }

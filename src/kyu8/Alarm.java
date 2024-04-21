@@ -22,6 +22,19 @@ Categories : Fundamentals, Booleans
  */
 public class Alarm {
 
+public static boolean setAlarm(boolean employed,boolean onVacation){
 
+    return employed&&!onVacation;
+
+}
+
+    public static void main(String[] args) {
+
+        System.out.println(setAlarm(true, true));
+        System.out.println(setAlarm(false, true));
+        System.out.println(setAlarm(false, false));
+        System.out.println(setAlarm(true, false));
+
+    }
 
 }
