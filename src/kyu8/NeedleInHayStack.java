@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 A Needle in the Haystack
 
@@ -19,5 +18,18 @@ Categories : Fundamentals, Arrays
  */
 public class NeedleInHayStack {
 
+    public static void main(String[] args) {
 
+        var arr = new String[]{"hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"};
+        System.out.println(YevgeniySolutionFindNeedle(arr));
+    }
+
+    static String YevgeniySolutionFindNeedle(String[] array) {
+        for (var i = 0; i < array.length; i++) {
+            if (array[i].equals("needle")) {
+                return "found the needle at position " + i;
+            }
+        }
+        return "not found";
+    }
 }

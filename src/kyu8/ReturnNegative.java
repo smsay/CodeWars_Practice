@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Return Negative
 
@@ -25,6 +24,14 @@ Categories : Fundamentals, Numbers
  */
 public class ReturnNegative {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionReturnNegative(-1));
+    }
 
+    static int YevgeniySolutionReturnNegative(int n) {
+        if (n < 0) return n;
+        if (n > 1) return -n;
+        return 0;
+    }
 }

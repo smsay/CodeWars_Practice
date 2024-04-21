@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Sleigh Authentication
 
@@ -30,5 +29,13 @@ Categories : Fundamentals
  */
 public class Sleigh {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionAuthenticate("Santa Claus", "Ho Ho Ho!"));
+
+    }
+
+    static boolean YevgeniySolutionAuthenticate(String name, String password) {
+        return name.equals("Santa Claus") && password.equals("Ho Ho Ho!");
+    }
 }

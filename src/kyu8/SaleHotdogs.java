@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Usage of ternary operation in java
 
@@ -20,5 +19,16 @@ n >= 10             90
 Categories : Fundamentals
  */
 public class SaleHotdogs {
+
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionSaleHotDogs(11));
+    }
+
+    static int YevgeniySolutionSaleHotDogs(int n) {
+        if (n < 5) return 100;
+        if (n >= 10) return 90;
+        return 95;
+    }
 
 }
