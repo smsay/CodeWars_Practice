@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Grasshopper - Grade book
 
@@ -24,7 +23,18 @@ Fundamentals
  */
 public class GrassHopperGradeBook {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionGradeBook(100));
+    }
 
+    static Character YevgeniySolutionGradeBook(int score) {
+        if (score > 100 || score < 0) throw new IllegalArgumentException();
+        if (score >= 90) return 'A';
+        if (score >= 80) return 'B';
+        if (score >= 70) return 'C';
+        if (score >= 60) return 'D';
+        return 'F';
+    }
 
 }

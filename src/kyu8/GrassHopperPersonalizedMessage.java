@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Description:
 
@@ -18,4 +17,12 @@ Control Flow, Basic Language Features
  */
 class GrassHopperPersonalizedMessage {
 
+    public static void main(String[] args) {
+
+    }
+
+    static String YevgeniySolution(String name, String owner) {
+        if (name.equals(owner)) return "Hello boss";
+        return "Hello guest";
+    }
 }

@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Find Mean
 
@@ -24,5 +23,18 @@ Categories : Arrays, Lists, Fundamentals
 */
 public class GrassHopperMeaner {
 
-  
+    public static void main(String[] args) {
+
+        var array = new int[]{1, 3, 5, 7};
+        System.out.println(YevgeniySolution(array));
+    }
+
+    static int YevgeniySolution(int[] array) {
+        var sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+    }
 }

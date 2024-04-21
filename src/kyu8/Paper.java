@@ -18,5 +18,16 @@ Categories : Fundamentals
  */
 public class Paper {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionPaper(5, 5));
+        System.out.println(YevgeniySolutionPaper(-5, 5));
+        System.out.println(YevgeniySolutionPaper(5, 0));
+
+    }
+
+    static int YevgeniySolutionPaper(int n, int m) {
+        if (n <= 0 || m <= 0) return 0;
+        return n * m;
+    }
 }

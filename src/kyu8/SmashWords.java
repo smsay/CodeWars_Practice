@@ -17,5 +17,20 @@ Categories : Strings, Arrays, Fundamentals
 
 public class SmashWords {
 
+    public static void main(String[] args) {
 
+        var array = new String[]{"hello", "world", "this", "is", "great"};
+        System.out.println(YevgeniySolutionSmashWords(array));
+
+    }
+
+    static String YevgeniySolutionSmashWords(String[] array) {
+        var result = new StringBuilder();
+
+        for (var word : array) {
+            result.append(word).append(" ");
+        }
+
+        return result.substring(0, result.length() - 1);
+    }
 }

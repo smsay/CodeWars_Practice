@@ -1,6 +1,7 @@
 package kyu8;
 
 
+import java.util.Arrays;
 
 /*
 Kata Example Twist
@@ -17,4 +18,17 @@ Categories : Fundamentals
  */
 public class KataExampleTwist {
 
+    public static void main(String[] args) {
+
+        var websites = new String[1000];
+
+        System.out.println(Arrays.toString(YevgeniySolutionAddValue(websites)));
+    }
+
+    static String[] YevgeniySolutionAddValue(String[] array) {
+        for (int i = 0; i < 1000; i++) {
+            array[i] = "codewars";
+        }
+        return array;
+    }
 }

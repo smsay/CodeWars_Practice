@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Grasshopper - Summation
 
@@ -22,5 +21,14 @@ Categories : Fundamentals, Loops, Control Flow, Basic Language Features
  */
 public class GrassHopperSummation {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionSummation(2));
+    }
+
+    static int YevgeniySolutionSummation(int n) {
+        if (n == 0) return n;
+        if (n == 1) return 1;
+        return n + YevgeniySolutionSummation(n - 1);
+    }
 }
