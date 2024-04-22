@@ -13,5 +13,13 @@ Categories : Fundamentals, Strings
  */
 public class ReturningStrings {
 
+    public static void main(String[] args) {
 
+        var name = "Lucy";
+        System.out.println(YevgeniySolutionGreeting(name));
+    }
+
+    static String YevgeniySolutionGreeting(String name) {
+        return "Hello, " + name + " how are you today?";
+    }
 }
