@@ -15,4 +15,13 @@ Categories : Fundamentals
  */
 public class StringRepeat {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionRepeat(6, "I"));
+        System.out.println(YevgeniySolutionRepeat(5, "Hello"));
+    }
+
+    static String YevgeniySolutionRepeat(int i, String s) {
+        return s.repeat(i);
+    }
 }
