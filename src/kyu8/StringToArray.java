@@ -1,6 +1,8 @@
 package kyu8;
 
 
+import java.util.Arrays;
+
 /*
 Convert a string to an array
 
@@ -13,5 +15,12 @@ Categories : Fundamentals, Arrays, Strings
  */
 public class StringToArray {
 
+    public static void main(String[] args) {
+        var sentence = "I love arrays they are my favourite";
+        System.out.println(Arrays.toString(YevgeniySolutionStringToArray(sentence)));
+    }
 
+    static String[] YevgeniySolutionStringToArray(String s) {
+            return s.split(" ");
+    }
 }
