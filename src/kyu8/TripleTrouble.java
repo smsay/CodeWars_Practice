@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Triple Trouble
 
@@ -18,4 +17,19 @@ Categories : Puzzles
  */
 public class TripleTrouble {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionTripleTrouble("aa", "bb", "cc"));
+    }
+
+    static String YevgeniySolutionTripleTrouble(String first, String second, String third) {
+
+        var length = first.length();
+        var result = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            result.append(first.charAt(i)).append(second.charAt(i)).append(third.charAt(i));
+        }
+        return result.toString();
+    }
 }
