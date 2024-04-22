@@ -32,8 +32,8 @@ public class GrassHopperMeaner {
     static int YevgeniySolution(int[] array) {
         var sum = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
+        for (var i : array) {
+            sum += i;
         }
         return sum / array.length;
     }
