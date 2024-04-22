@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Description:
 altERnaTIng cAsE <=> ALTerNAtiNG CaSe
@@ -25,5 +24,24 @@ Categories : Fundamentals
  */
 public class StringUtils {
 
+    public static void main(String[] args) {
 
+        System.out.println(YevgeniySolutionToAlternatingCase("hello world"));
+        System.out.println(YevgeniySolutionToAlternatingCase("1a2b3c4d5e"));
+        System.out.println(YevgeniySolutionToAlternatingCase("12345"));
+        System.out.println(YevgeniySolutionToAlternatingCase("hEllO wOrld"));
+    }
+
+    static String YevgeniySolutionToAlternatingCase(String s) {
+        var result = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            var ch = s.charAt(i);
+            if (Character.isLowerCase(ch) && !Character.isDigit(ch)) {
+                result.append(("" + ch).toUpperCase());
+            } else {
+                result.append(("" + ch).toLowerCase());
+            }
+        }
+        return result.toString();
+    }
 }
