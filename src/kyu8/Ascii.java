@@ -14,4 +14,12 @@ Categories : Fundamentals
  */
 public class Ascii {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionGetChar(65));
+    }
+
+    static Character YevgeniySolutionGetChar(int n) {
+        return (char) n;
+    }
 }
