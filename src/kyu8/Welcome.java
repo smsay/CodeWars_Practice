@@ -1,6 +1,7 @@
 package kyu8;
 
 
+import java.util.HashMap;
 
 /*
 Your start-up's BA has told marketing that your website has a large audience
@@ -34,5 +35,39 @@ Categories : Fundamentals, Hashes, Data Structures, Objects
  */
 public class Welcome {
 
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionGreet("english"));
+        System.out.println(YevgeniySolutionGreet("czech"));
+        System.out.println(YevgeniySolutionGreet("danish"));
+    }
+
+    static String YevgeniySolutionGreet(String language) {
+
+        var map = new HashMap<String, String>();
+
+        map.put("english", "Welcome");
+        map.put("czech", "Vitejte");
+        map.put("danish", "Velkomst");
+        map.put("dutch", "Welkom");
+        map.put("estonian", "Tere tulemast");
+        map.put("finnish", "Tervetuloa");
+        map.put("flemish", "Welgekomen");
+        map.put("french", "Bienvenue");
+        map.put("german", "Willkommen");
+        map.put("irish", "Failte");
+        map.put("italian", "Benvenuto");
+        map.put("latvian", "Gaidits");
+        map.put("lithuanian", "Laukiamas");
+        map.put("polish", "Witamy");
+        map.put("spanish", "Bienvenido");
+        map.put("swedish", "Valkommen");
+        map.put("welsh", "Croeso");
+
+        if (map.containsKey(language)) {
+            return map.get(language);
+        }
+        return map.get("english");
+    }
 
 }
