@@ -1,7 +1,6 @@
 package kyu8;
 
 
-
 /*
 Transportation on vacation
 
@@ -20,5 +19,26 @@ Write a code that gives out the total amount for different days(d).
 Categories : Fundamentals
  */
 public class TransportationOnVacation {
+
+    public static void main(String[] args) {
+
+        System.out.println(YevgeniySolutionCountTotalAmount(1));
+        System.out.println(YevgeniySolutionCountTotalAmount(2));
+        System.out.println(YevgeniySolutionCountTotalAmount(3));
+        System.out.println(YevgeniySolutionCountTotalAmount(7));
+    }
+
+    static int YevgeniySolutionCountTotalAmount(int days) {
+        var sum = 0;
+        for (var i = 1; i <= days; i++) {
+            sum += 40;
+        }
+        if (days >= 7) {
+            return sum - 50;
+        } else if (days >= 3) {
+            return sum - 20;
+        }
+        return sum;
+    }
 
 }
