@@ -19,6 +19,9 @@ class GrassHopperPersonalizedMessage {
 
     public static void main(String[] args) {
 
+        System.out.println(YevgeniySolution("John","John"));
+        System.out.println(YevgeniySolution("John","Sam"));
+
     }
 
     static String YevgeniySolution(String name, String owner) {
