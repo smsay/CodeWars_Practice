@@ -16,6 +16,14 @@ package kyu8;
  */
 public class ConvertNumberToString {
 
+    public static String nToS(int number){
+        return String.valueOf(number);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(nToS(999));
+    }
+
 
 
 }

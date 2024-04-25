@@ -11,6 +11,15 @@ package kyu8;
  */
 public class ConvertBooleanToYesNoStrings {
 
+    public static String yesNo(boolean result){
+
+        return (result==true)?"yes":"no";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(yesNo(false));
+        System.out.println(yesNo(true));
+    }
 
 
 }
