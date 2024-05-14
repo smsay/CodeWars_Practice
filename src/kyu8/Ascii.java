@@ -13,5 +13,13 @@ For ASCII table, you can refer to http://www.asciitable.com/
 Categories : Fundamentals
  */
 public class Ascii {
+    public static void main(String[] args) {
+        int number = 80;
+        System.out.println(getChar(number));
+    }
 
+    public static char getChar(int number) {
+        char c =(char)number;
+        return c;
+    }
 }
