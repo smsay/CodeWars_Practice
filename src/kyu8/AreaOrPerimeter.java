@@ -1,7 +1,5 @@
 package kyu8;
 
-
-
 /*
 Area or Perimeter
 
@@ -19,5 +17,17 @@ Categories : Fundamentals
 
  */
 public class AreaOrPerimeter {
+    public static void main(String[] args) {
+       // int length=3, width=3;
+        int length=6, width=10;
+
+        System.out.println(area_or_perimeter(length,width));
+    }
+
+    public static int area_or_perimeter(int length, int width) {
+        if (length==width) return length*width;
+        return 2*(length+width);
+    }
+
 
 }
