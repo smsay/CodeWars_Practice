@@ -1,6 +1,7 @@
 package kyu8;
 
 
+import java.util.Arrays;
 
 /*
 Abbreviate a Two Word Name
@@ -18,6 +19,19 @@ patrick feeney => P.F
 Categories : Fundamentals, Strings, Arrays
  */
 public class AbbreviateTwoWords {
+    public static void main(String[] args) {
+        String name ="Sam Harris";
+        System.out.println(initial(name));
+    }
 
+    public static String initial(String name) {
+        String[] array = name.split(" ");
+        System.out.println(Arrays.toString(array));
+        String initial="";
+        for (int i = 0; i < array.length; i++) {
+            initial+= array[i].charAt(0)+".";
+        }
+        return initial;
+    }
 
 }
