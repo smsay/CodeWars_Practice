@@ -17,13 +17,13 @@ Categories  : Fundamentals
 public class Calculate {
 
     public static void main(String[] args) {
-        double weight=73, height=186;
+        double weight=73, height=1.86;
         bmi(weight,height);
     }
 
     public static String bmi(double weight, double height) {
-        double bmi;
-        bmi=weight/(height*height)*10000;
+
+        var bmi=weight/(height*height);
         System.out.println(bmi);
         if (bmi <= 18.5) return "Underweight";
         else if (bmi <= 25.0) return "Normal";

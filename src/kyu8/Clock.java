@@ -26,6 +26,14 @@ Input constraints:
 Categories : Fundamentals
  */
 public class Clock {
-
+    public static void main(String[] args) {
+        int h = 0;
+        int m =1;
+        int s= 1;
+        System.out.println(clock(0, 1, 1));
+    }
+    static long clock(int h, int m, int s) {
+        return 1000L*(h*3600+m*60+s);
+    }
 
 }

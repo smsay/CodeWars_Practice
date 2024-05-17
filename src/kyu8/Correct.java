@@ -20,5 +20,45 @@ The test cases contain numbers only by mistake.
 Categories : Fundamentals
  */
 public class Correct {
+    public static void main(String[] args) {
+        System.out.println(correct2("150"));
+    }
 
+    static String correct(String document){ //O(n)
+        document= document.replace("5", "S");
+        document=  document.replace("0", "O");
+        document=  document.replace("1", "I");
+     return document;
+    }
+
+    static String correct1(String document){  // O(n^2)
+        for (int i = 0; i < document.length(); i++) {
+            if (document.charAt(i)=='5')
+                document = document.replace(document.charAt(i), 'S');
+            else if (document.charAt(i)=='1')
+                document = document.replace(document.charAt(i), 'I');
+            else if (document.charAt(i)=='0')
+                document = document.replace(document.charAt(i), '0');
+        }
+        return document;
+    }
+
+    static String correct2(String d) {
+        StringBuilder correctText = new StringBuilder();
+
+        for (char c : d.toCharArray()) {
+            switch (c) {
+                case '5':
+                    correctText.append('5');
+                    break;
+                case '1':
+                    correctText.append('I');
+                    break;
+                case '0':
+                    correctText.append('O');
+                    break;
+            }
+        }
+        return correctText.toString();
+    }
 }

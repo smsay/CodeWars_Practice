@@ -19,7 +19,6 @@ public class Ascii {
     }
 
     public static char getChar(int number) {
-        char c =(char)number;
-        return c;
+        return (char)number;
     }
 }

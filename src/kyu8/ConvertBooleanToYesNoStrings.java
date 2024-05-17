@@ -10,7 +10,10 @@ package kyu8;
  * https://www.codewars.com/kata/53369039d7ab3ac506000467
  */
 public class ConvertBooleanToYesNoStrings {
-
-
-
+    public static void main(String[] args) {
+        System.out.println(convert(true));
+    }
+static String convert(boolean b) {
+    return b ? "Yes" : "No";
+}
 }

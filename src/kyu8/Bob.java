@@ -28,4 +28,15 @@ Categories : Fundamentals, Numbers
  */
 class Bob {
 
+    public static void main(String[] args) {
+        System.out.println(fit(10, 5, 5));
+        System.out.println(fit(100, 60, 50));
+    }
+
+    static String fit(int cap, int on, int wait) {
+        var result = (on+wait)-cap;
+        if (result==0) return "He can fit all "+ wait + " passengers";
+        return "He can't fit "+ result +" of the "+wait+" waiting";
+    }
+
 }

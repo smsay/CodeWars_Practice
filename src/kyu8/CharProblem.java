@@ -16,4 +16,13 @@ Categories : Fundamentals, Integers, Numbers, Chars
  */
 public class CharProblem {
 
+    public static void main(String[] args) {
+        String s = "1 year old";
+        System.out.println(age(s));
+    }
+
+    static int age(String s) {
+        return Integer.parseInt(s.substring(0,1));
+    }
+
 }

@@ -1,7 +1,4 @@
 package kyu8;
-
-
-
 /*
 
 DNA to RNA Conversion
@@ -23,6 +20,13 @@ i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 Categories : Fundamentals, Strings
  */
 public class Bio {
-
+    public static void main(String[] args) {
+        String s = "GCAT";
+        System.out.println(toRna(s));
+    }
+static String toRna (String s) {
+         if (s.contains("T")) return s.replace("T", "U");
+         return s;
+}
 
 }

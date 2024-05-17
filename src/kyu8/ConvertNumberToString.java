@@ -16,6 +16,14 @@ package kyu8;
  */
 public class ConvertNumberToString {
 
+    public static void main(String[] args) {
+        System.out.println(convertString(123));
+    }
+
+    static String convertString(int number) {
+        //return String.valueOf(number);
+        return Integer.toString(number);
+    }
 
 
 }
