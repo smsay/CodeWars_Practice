@@ -45,5 +45,20 @@ After placing signs and brackets, the Maximum value obtained from the expression
 Categories : Fundamentals, Algorithms, Numbers, Basic Language Features
  */
 public class ExpressionsMatter {
+    public static void main(String[] args) {
 
+
+        System.out.println(expressionMatter(1, 2, 3));
+    }
+    public static int expressionMatter(int a, int b, int c) {
+        int max = 0;
+        // Try all possible combinations of operations and brackets
+        max = Math.max(max, a + b + c);
+        max = Math.max(max, a * b * c);
+        max = Math.max(max, a + b * c);
+        max = Math.max(max, a * b + c);
+        max = Math.max(max, (a + b) * c);
+        max = Math.max(max, a * (b + c));
+        return max;
+    }
 }
